@@ -1,0 +1,19 @@
+div {
+  border: 1px solid red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
