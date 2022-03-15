@@ -7,7 +7,7 @@ class Cv extends Component {
             <div className="container">
                 <div className="datosPersonales">
                     <div className="nombreApellido">
-                        <span>{this.props.data.firstName} {this.props.data.lastName}</span>
+                        <h1>{this.props.data.firstName} {this.props.data.lastName}</h1>
                         <span>{this.props.data.title}</span>
                     </div>
                     <div className="otrosDatos">
@@ -16,28 +16,28 @@ class Cv extends Component {
                         <span>{this.props.data.phone}</span>
                     </div>
                 </div>
-                <div className="workExprience">
+                <div className="workExperience">
+                    <h3>Work Experience</h3>
                     {this.props.data.workExperience.map((item) => {
                             return (
                                 <div className="workItem">
-                                    <span>{item.position}</span>
+                                    <span className="strong">{item.position}</span>
                                     <span>{item.company}</span>
                                     <span>{item.city}</span>
-                                    <span>{item.from}</span>
-                                    <span>{item.to}</span>
+                                    <span>{item.from} - {item.to}</span>
                                 </div>
                             )
                     })} 
                 </div>
                 <div className="education">
+                    <h3>Education</h3>
                     {this.props.data.education.map((item) => {
                                 return (
                                     <div className="educationItem">
-                                        <span>{item.college}</span>
+                                        <span className="strong">{item.college}</span>
                                         <span>{item.title}</span>
                                         <span>{item.area}</span>
-                                        <span>{item.from}</span>
-                                        <span>{item.to}</span>
+                                        <span>{item.from} - {item.to}</span>
                                     </div>
                                 )
                         })}

@@ -48,7 +48,7 @@ class Form extends Component {
                         <input id="phone" onChange={this.handleChange} placeholder="Phone"></input>
                         <input id="description" onChange={this.handleChange} placeholder="Description"></input>
                     </form>
-                    <h2>Experience</h2>
+                    <h2>Work experience</h2>
                         {this.state.workExperience.map((item) => {
                             return <ExperienceForm key={item.id} id={item.id} changeFunc={this.handleWorkChange} deleteFunc={this.delWorkExp} data={item}/>
                         })}                        
@@ -60,7 +60,6 @@ class Form extends Component {
                         <button onClick={this.addEducation} type="button">Add</button>
                 </div>
                     <Cv data={this.state}/>
-                    <button onClick={this.logState}>Log state</button>
             </main>
         )
     }
@@ -142,11 +141,6 @@ class Form extends Component {
         })
 
     }
-
-   logState = () => {
-       console.log(this.state)
-   }
-    
 }
 
 export default Form
