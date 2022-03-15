@@ -17,3 +17,24 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+.nombreApellido {
+  display: flex;
+  flex-direction: column;
+}
+
+.datosPersonales {
+  display: flex;
+  flex-direction: row;
+}
+
+.otrosDatos {
+  display: flex;
+  flex-direction: column;
+}
+
+.workItem,
+.educationItem {
+  display: flex;
+  flex-direction: column;
+}
